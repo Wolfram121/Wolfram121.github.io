@@ -1,0 +1,85 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background1.jpg'); /* Path to your background image */
+    background-size: 150%;
+    background-position: center; /* Center the image */
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+header {
+    color: #6F4E37;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    width: 48%; /* Adjust width as needed */
+    padding: 2rem;
+}
+
+.align-left {
+    text-align: justify; /* Justify text alignment */
+    align-self: flex-start; /* Align the div to the start (left) */
+    margin-left: 2rem;
+}
+
+.align-right {
+    text-align: justify; /* Justify text alignment */
+    align-self: flex-end; /* Align the div to the end (right) */
+    margin-right: 2rem;
+}
+
+.large {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+footer {
+    color: #6F4E37;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
