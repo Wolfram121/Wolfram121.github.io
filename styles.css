@@ -226,6 +226,42 @@ header {
     color: white;
 }
 
+/* For Blog Page */
+
+#blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#blog-posts .blog-post {
+    flex: 1 1 calc(25% - 1rem); /* Adjust the width of each blog post item */
+    box-sizing: border-box;
+    margin: 4rem 2rem; /* Adjust the margin between blog posts as needed */
+}
+.blog-post {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    border: 1px solid black;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    max-height: 800px; /* Adjust as needed */
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.blog-text {
+    font-family: EB Garamond, serif;
+    font-style: italic;
+    font-size: 0.5rem;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
     .navbar {
