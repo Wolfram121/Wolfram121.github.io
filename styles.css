@@ -37,7 +37,7 @@ body {
 }
 
 .cofbg {
-    background-image: url(./images/amsterdam-canal.jpg);
+    background-image: url(./images/bg/amsterdam-canal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,22 +100,35 @@ body {
 #gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-self: center;
     gap: 1rem; /* Adjust the gap between images as needed */
+    margin: 0em 5em;
+    margin-top: 5rem;
 }
 
 .gallery-item {
-    flex: 1 1 calc(25% - 1rem); /* Adjust the width of each image item */
     box-sizing: border-box;
+    align-self: center;
+}
+
+.caption {
+    font-size: 1.2em;
+    text-align: center;
+    align-content: self;
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
+    width: 25em;
+    height: 25em;
     display: block;
     object-fit: cover;
+    align-self: center;
 }
 
 header {
@@ -260,6 +273,17 @@ header {
     font-family: EB Garamond, serif;
     font-style: italic;
     font-size: 0.5rem;
+}
+
+/* For About Page */
+
+#about-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Adjust the gap between content as needed */
+    background-color: white;
+    min-height: 60vh;
 }
 
 /* Media Query for Mobile Devices */
