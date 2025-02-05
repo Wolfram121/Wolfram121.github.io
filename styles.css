@@ -164,8 +164,7 @@ header {
     align-items: center;
     margin: 0 auto;
     padding: 0 1rem;
-    max-height: 5vh;
-    min-height: 4vh;
+    height: 5vh;
 }
 
 .nav-left, .nav-right {
@@ -182,10 +181,14 @@ header {
     justify-content: flex-end;
 }
 
+.nav-right a img {
+    width: 100%;
+}
+
 .nav-left a, .nav-right a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .nav-center {
@@ -196,7 +199,7 @@ header {
 .home-link {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 0.5rem 1rem;
     position: relative; /* Position relative for pseudo-elements */
     display: inline-block; /* Ensure it behaves like a block element */
@@ -262,16 +265,21 @@ header {
     background-color: white;
 }
 
+#blog-link {
+    text-decoration: none;
+    color: black;
+}
+
 #blog-posts .blog-post {
     flex: 1 1 calc(25% - 1rem); /* Adjust the width of each blog post item */
     box-sizing: border-box;
     margin: 4rem 2rem; /* Adjust the margin between blog posts as needed */
 }
+
 .blog-post {
     width: 100%;
     max-width: 600px; /* Adjust as needed */
     border: 1px solid black;
-    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -280,14 +288,35 @@ header {
     height: auto;
     max-height: 800px; /* Adjust as needed */
     object-fit: cover;
-    border: 1px solid black;
+    flex-grow: 1;
 }
 
-.blog-text {
-    font-family: EB Garamond, serif;
-    font-style: italic;
-    font-size: 0.5rem;
+.blog-content {
+    padding: 1rem;
 }
+
+#blog-subinfo {
+    padding-top: 1rem;
+}
+
+.blog-person {
+    font-size: 1.0rem;
+    font-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.blog-title {
+    font-family: EB Garamond, serif;
+    font-style: oblique;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-top: 0;
+}
+
 
 /* For About Page */
 
